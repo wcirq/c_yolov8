@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "struct.h": "c"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/datas/develop/c/c_yolov8",
+            "binaryPath": "/datas/develop/c/c_yolov8/run",
+            "binaryArgs": []
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+*.o
+modules/*o
+run
+yolov8.bin
+__pycache__
+*.pyc
