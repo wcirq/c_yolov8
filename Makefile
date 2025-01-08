@@ -27,12 +27,13 @@ ${YOLOV8_BIN_MODEL_PATH}: ${YOLOV8_PATH}
 	
 
 ######### Define some names for so #######
-all: $(TARGET) ${YOLOV8_BIN_MODEL_PATH}
+all: ${YOLOV8_BIN_MODEL_PATH} $(TARGET) 
 
 ########## Shared lib ###########
 $(TARGET): ${MODULES_OBJS} $(OBJS) 
 	${CC} ${CFLAGS} -fopenmp ${MODULES_OBJS} $(OBJS) -o $(TARGET) $(LDFLAGS) ${LDLIBS}
 
+########## Shared lib ###########
 %.o: %.c
 	${CC} ${CFLAGS} -fopenmp -c $< -o $@ -lm
 
